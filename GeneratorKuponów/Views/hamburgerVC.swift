@@ -9,7 +9,8 @@
 import UIKit
 
 class hamburgerVC: UIViewController {
-
+    @IBOutlet weak var dataHamburger: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let date = Date()
@@ -19,7 +20,8 @@ class hamburgerVC: UIViewController {
         let month = calendar.component(.month, from: date)
         let year = calendar.component(.year, from: date)
         let fDay = day - 1
-        print("\(fDay)-0\(month)-\(year)")
+        let dataD = "DATA WYDANIA: \(fDay)-0\(month)-\(year)"
+        self.dataHamburger.text = dataD
 
         // Do any additional setup after loading the view.
     }
