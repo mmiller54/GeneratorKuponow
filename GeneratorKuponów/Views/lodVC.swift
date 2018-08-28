@@ -10,10 +10,7 @@ import UIKit
 
 class lodVC: UIViewController {
 
-    @IBOutlet weak var dataLabel: UILabel!
-    
-    
-   
+    @IBOutlet weak var dataLody: UILabel!
     
     override func viewDidLoad() {
         
@@ -25,8 +22,8 @@ class lodVC: UIViewController {
         let month = calendar.component(.month, from: date)
         let year = calendar.component(.year, from: date)
         let fDay = day - 1
-        let dataD = "\(fDay)-0\(month)-\(year)"
-        self.dataLabel.text = dataD
+        let dataD = "DATA WYDANIA: \(fDay)-0\(month)-\(year)"
+        self.dataLody.text = dataD
        
      
 
