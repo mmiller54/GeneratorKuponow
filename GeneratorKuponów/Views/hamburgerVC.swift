@@ -12,6 +12,14 @@ class hamburgerVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let day = calendar.component(.day, from: date)
+        let month = calendar.component(.month, from: date)
+        let year = calendar.component(.year, from: date)
+        let fDay = day - 1
+        print("\(fDay)-0\(month)-\(year)")
 
         // Do any additional setup after loading the view.
     }
